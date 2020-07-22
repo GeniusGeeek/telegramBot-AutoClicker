@@ -1,5 +1,5 @@
-# telegram-cryptoBotClicker
-An auto bot clicker for telegram cryptocurrency bot
+# telegramBot-cryptoAutoClicker
+An auto clicker script for telegram cryptocurrency bot
 
 
 How to use?
