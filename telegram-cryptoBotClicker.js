@@ -15,13 +15,13 @@ DISCLAIMER: for education purposes, you bear the consequences of using this scri
 Paying Telegram Bots:
 Litecoin clickBot: https://t.me/Litecoin_click_bot?start=egIv
 Bitcoin clickBot: https://t.me/BitcoinClick_bot?start=gYzP 
+
+Note: This script was tested on the above telegram bots and a few others.
+contact me for bug reporting: graciousemmanuel52@gmail.com
 */
 
 //start autoclicker
 setInterval(function clickAds() {
-  //bitcoin link:https://web.telegram.org/#/im?p=@BitcoinClick_bot
-  //litecoin link:https://web.telegram.org/#/im?p=@Litecoin_click_bot
-   /* replace link with your url you see in bot page */
   var GoToWebsite = $("a.btn.reply_markup_button:last");
   var VisitSites = $('.reply_markup_button:contains("Visit sites"):last');
   var ClickMenu = $('.reply_markup_button:contains("Menu"):last');
