@@ -27,6 +27,8 @@ setInterval(function clickAds() {
   var VisitSites = $('.reply_markup_button:contains("Visit sites"):last');
   var ClickMenu = $('.reply_markup_button:contains("Menu"):last');
   var ClickKeyboard = $(".icon-keyboard");
+  var lastDiv = document.getElementsByClassName("im_message_wrap");
+  var lastdiv = lastDiv[lastDiv.length - 1];
   var AdMsg = $(".im_message_text:last");
   var AdMsg = document.getElementsByClassName("im_message_text");
   var admsg = AdMsg[AdMsg.length - 1];
@@ -34,9 +36,14 @@ setInterval(function clickAds() {
     return false;
   }
 
-  if (GoToWebsite.length) {
-    GoToWebsite.click();
-  } else if (VisitSites.length) {
+ if (lastdiv.textContent.includes("Go to website")) {
+   if (GoToWebsite.length) {
+     GoToWebsite.click();
+   }
+  }
+
+   else {
+     if (VisitSites.length) {
     VisitSites.click();
     var adClick = $("a.btn.reply_markup_button:last");
     if (adClick) {
@@ -70,6 +77,7 @@ setInterval(function clickAds() {
       }
     }
   }
+}
   setTimeout(() => {
     var ok = $(".btn-md-primary:last");
     if (ok) {
