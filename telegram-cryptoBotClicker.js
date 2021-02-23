@@ -3,10 +3,11 @@ What is this?
 **This a Js auto bot clicker for telegram-crypto-bot**
 
 How to use?
+**Download the script**
 **Goto web.telegram.org, visit your crypto bot page**
 **Install custom style script extention on chrome/firefox**
-**copy and paste this script to custom style script extention(Recommended) OR
-paste this script in javascript web developer console to inject and run script**
+**copy and paste this script to custom style script extention(Recommended) OR paste this script in javascript web developer console to inject and run script**
+**Search for https://web.telegram.org/#/im?p=@BitcoinClick_ bot link in this script using ctrl+f and replace it with your custom telegram bot link you see in your browser
 **Click on Goto website/veiw ads on telegram bot (only to be done once, after which autoclicker script clicks for you)**
 
 watch your crypto grow:)
