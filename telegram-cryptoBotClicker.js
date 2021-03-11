@@ -7,7 +7,7 @@ How to use?
 **Goto web.telegram.org, visit your crypto bot page**
 **Install custom style script extention on chrome/firefox**
 **copy and paste this script to custom style script extention(Recommended) OR paste this script in javascript web developer console to inject and run script**
-**Search for https://web.telegram.org/#/im?p=@BitcoinClick_ bot link in this script using ctrl+f and replace it with your custom telegram bot link you see in your browser
+**Search for "var yourBotLink" without the quotes in this script using ctrl+f and replace it with your custom telegram bot link you see in your browser
 **Click on Goto website/veiw ads on telegram bot (only to be done once, after which autoclicker script clicks for you)**
 
 watch your crypto grow:)
@@ -23,6 +23,8 @@ contact me for bug reporting: graciousemmanuel52@gmail.com
 */
 
 //start autoclicker
+var yourBotLink = "https://web.telegram.org/#/im?p=@Litecoin_click_bot"; // replace this with your telegram bot link you see in your browser(VERY IMPORTANT!)
+
 setInterval(function clickAds() {
   var GoToWebsite = $("a.btn.reply_markup_button:last");
   var VisitSites = $('.reply_markup_button:contains("Visit sites"):last');
@@ -89,14 +91,14 @@ setInterval(function clickAds() {
 
 //close tabs after 12 minutes to avoid browser crashing
 setInterval(function clearTabs() {
-  if (window.location.href != "https://web.telegram.org/#/im?p=@BitcoinClick_bot" ) {
+  if (window.location.href != yourBotLink ) {
     window.close();
     close();
   }
 }, 720000);
 
-//close non-TG tabs after 1 min   /* replace link with your url you see in bot page */
-if (window.location.href != "https://web.telegram.org/#/im?p=@BitcoinClick_bot") {
+//close non-TG tabs after 1 min  
+if (window.location.href != yourBotLink) {
   setTimeout(function closeTab() {
     window.close();
     close();
@@ -111,9 +113,9 @@ if (checkCaptcha) {
   }, 1200);
 }
 
-//reload TG tab   /* replace link with your url you see in bot page */
+//reload TG tab  
 setInterval(function ReloadTab() {
-  if (window.location.href == "https://web.telegram.org/#/im?p=@BitcoinClick_bot") {
+  if (window.location.href == yourBotLink) {
     location.reload();
   }
 }, 1200000);
