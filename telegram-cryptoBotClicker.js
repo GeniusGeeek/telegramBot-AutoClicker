@@ -20,6 +20,8 @@ Bitcoin clickBot: https://t.me/BitcoinClick_bot?start=gYzP
 
 Note: This script was tested on the above telegram bots and a few others.
 contact me for bug reporting: graciousemmanuel52@gmail.com
+
+kindly appreciate me if you find this helpful, send eth to 0x885013ea5825c7596AECba3d65239feDaB36c078 on the ECR20 network :)
 */
 
 //start autoclicker
